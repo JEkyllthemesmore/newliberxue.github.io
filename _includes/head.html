@@ -22,11 +22,10 @@ LLLLLLLLLLLLLLLLLLLLLLLLiiiiiiiibbbbbbbbbbbbbbbb       eeeeeeeeeeeeee   rrrrrrr 
   <title>{{ page.title }} - {{ site.title }}</title>
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="{{ page.title }} - {{ site.title }}">
-  <meta name="twitter:keywords"  content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}" property='og:description' />
+  <meta name="twitter:keywords"  content="{{ page.title }} - {{ site.title }}" property='og:description' />
   <meta property="og:type" content="article">
   <meta property="og:title" content="{{ page.title }} - {{ site.title }}">
-  <meta property="og:description" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="og:keywords"  content="{{ page.content | strip_html | strip_newlines | truncate: 120 }}" property='og:description' />
+  <meta name="og:keywords"  content="{{ page.title }} - {{ site.title }}|{{ page.content | strip_html | strip_newlines | truncate: 120 }}" property='og:description' />
   <meta name="theme-Jekyll by liberxue" content="#eb5055"> 
   <link rel="icon" type="image/png" href="{{ site.url }}/style/favicons/favicon.ico" />
   <link href="{{ site.url }}/style/favicons/favicon.ico" rel="shortcut icon" type="image/png">
