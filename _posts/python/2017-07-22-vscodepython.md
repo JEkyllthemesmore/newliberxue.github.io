@@ -22,7 +22,7 @@ tags:
 此路不通啊
  
 
-# 环境：
+# 环境
 ```Shell
 Mac 10.12.6 Beta (16G24b)
 vscode：1.14.1
@@ -37,6 +37,7 @@ Python2.7
 
 ```
 所以呢压根不需要安装 
+ 
 ## iTerm测试下Python
 
 ```Python
