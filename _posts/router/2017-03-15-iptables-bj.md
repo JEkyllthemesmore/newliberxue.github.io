@@ -35,7 +35,8 @@ iptables -L
  -n：以数字的方式显示ip，它会将ip直接显示出来，如果不加-n，则会将ip反向解析成主机名。
  -v：显示详细信息
 一个规则列表例子
-{% highlight shell %}
+
+```shell
 [root@sstest ~]# iptables -L
 Chain INPUT (policy ACCEPT)
 target     prot opt source               destination         
@@ -53,16 +54,19 @@ REJECT     all  --  anywhere             anywhere            reject-with icmp-ho
 Chain OUTPUT (policy ACCEPT)
 target     prot opt source  
 }
-{% endhighlight %}
+```
+
 **destination** 
 1、iptables有三个规则链（chain）。分别为INPUT（数据包流入口） ，FORWARD （转发），OUTPUT（数据包流出口）。在定义任何规则时基本上都要写明是哪个。
 
 2、iptables有两种策略，一种叫“通”策略，一种叫“堵”策略，通策略，默认门是关着的，必须要定义谁能进。堵策略则是，大门是洞开的，但是你必须有身份认证，否则不能进。上面例子中(policy ACCEPT)即表示策略默认全部可以通过，同理相反的还有DROP。
 
 **修改策略命令是**
-```
+
+```shell
 iptables -P chain (DROP|ACCEPT)
 ```
+
  3、规则的次序非常关键，谁的规则越严格，应该放的越靠前，而检查规则的时候，是按照从上往下的方式进行检查的。所以一定要注意添加顺序问题。基本上规则无效多半是因为这种情况。
 
 **五、怎么添加删除iptables规则 ** 
@@ -88,7 +92,8 @@ iptables -P chain (DROP|ACCEPT)
 `
 流出一般在OUTPUT和POSTROUTING上
  其中，协议匹配（-p）有一些隐含参数
-```
+
+```shell
 -p tcp :
 
 --dport XX-XX：指定目标端口,不能指定多个非连续端口,只能指定单个端口
