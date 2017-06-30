@@ -62,7 +62,7 @@ Linux内核中没有提供单向链表的定义，但是实际上Linux多个地�
 # 单向链表清单
 来个栗子说明下Linux内核中字符设备map表和probe结果就是单向链表
 
-```
+``` shell
 for (i=0,p -= n;1<n;i++,p++,index++>)
 {
     struct probe **s=&domain->probes[index % 255];
