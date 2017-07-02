@@ -2,6 +2,7 @@
 layout: blog
 istop: true
 title: "c#交互JavaScript开发建立捕获前端错误日志"
+background: yellow
 background-image: https://o243f9mnq.qnssl.com/2017/06/116099051.jpg
 date:   2017-07-28 02:04:49
 category: Javascript
