@@ -3,6 +3,7 @@ layout: blog
 banana: true
 category: 香蕉派
 title:  BananaPi M2U在Debian安装私有云owncloud
+background: deepgrey
 date:   2017-07-29 22:49:14
 background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-29/75653305.jpg
 tags:
