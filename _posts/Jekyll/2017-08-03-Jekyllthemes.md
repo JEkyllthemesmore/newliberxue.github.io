@@ -2,6 +2,7 @@
 layout: blog
 banana: true
 category: Jekyll
+background: purple
 title:  Jekyll Themes liberxue开源博客主题
 date:   2017-08-03 11:21:27
 background-image: https://raw.githubusercontent.com/Liberxue/liberxue.github.io/master/thumbnails/ui.jpg
