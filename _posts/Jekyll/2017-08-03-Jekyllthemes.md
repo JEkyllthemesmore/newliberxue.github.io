@@ -12,8 +12,17 @@ tags:
 ---
 
 # Jekyll Themes
+打开您自定义的博客域名 博客上线成功喽 接下就是修改 _config.yml中的title name 菜单啊 都改为您的就可以了
+
+下载git 或者 GitHub 客户端 个人喜好用vocode 直接 编辑写作 commit
+
+希望能帮到您 个人博客 www.liberxue.com 记得star下 fork 或者watch 不定时更新界面和小bug
+
+自动生成标签 自动生成json搜索 自适应模板 自动生成feed.xml 自动生成分页 修改_config.yml 的links 为您的菜单 修改_config.yml 的paginate 为您的按照多少页分页
  liberxue.github.io 
-demo https://liberxue.github.io/
+## Jekyll Themes demo 
+ 
+https://liberxue.github.io/
 
 Jekyll Themes
 ----------
