@@ -27,7 +27,9 @@ apt-get update
 apt-get upgrade --show-upgraded
 
 ```
-## 安装Apache Web服务器的当前版本（在2.x系列），执行命令如下：
+## 安装Apache Web
+
+服务器的当前版本（在2.x系列），执行命令如下：
 ```
 apt-get install apache2
 ```
@@ -52,7 +54,10 @@ MaxRequestsPerChild 3000
 # 第二、配置虚拟主机、绑定域名
 
 在/etc/apache2/sites-available/的文件夹，用来存放所有站点的站点域名配置文件，设置站点时候用域名命名.conf这样站点多的时候也可以看到对应的站点。比如我们这里要创建2个站点，就需要配置2个conf文件，如下：
-## 站点A - /etc/apache2/sites-available/liberxue.com.conf
+## 站点A - 
+
+/etc/apache2/sites-available/liberxue.com.conf
+
 ```
 <VirtualHost *:80>
 ServerAdmin admin@liberxue.com
@@ -63,7 +68,9 @@ ErrorLog /var/www/liberxue.com/logs/error.log
 CustomLog /var/www/liberxue.com/logs/access.log combined
 </VirtualHost>
 ```
-## 站点B - /etc/apache2/sites-available/liberxue2.com.conf
+## 站点B - 
+
+/etc/apache2/sites-available/liberxue2.com.conf
 ```
 <VirtualHost *:80>
 ServerAdmin webmaster@liberxue2.com
