@@ -218,7 +218,7 @@ You should care about the kind of operations you need. In Redis there are a lot 
 
     对于两者的选择还是要看具体的应用场景，如果需要缓存的数据只是key-value这样简单的结构时，我在项目里还是采用memcache，它也足够的稳定可靠。如果涉及到存储，排序等一系列复杂的操作时，毫无疑问选择redis。
 
-# 关于redis和memcache的不同，下面罗列了一些相关说法，供记录：
+# 关于redis和memcache的不同：
 
 ## redis和memecache的不同在于[2]：
 
