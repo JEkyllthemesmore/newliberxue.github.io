@@ -1,17 +1,20 @@
 ---
 layout: blog
 banana: true
-category: 香蕉派
+category: Jekyll
 title:  Jekyll Themes liberxue开源博客主题
 date:   2017-08-03 11:21:27
-background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-29/75653305.jpg
+background-image: https://raw.githubusercontent.com/Liberxue/liberxue.github.io/master/thumbnails/ui.jpg
 tags:
 - Jekyll Themes
 - Themes
 - liberxue
 ---
 
-# liberxue.github.io demo https://liberxue.github.io/
+# Jekyll Themes
+ liberxue.github.io 
+demo https://liberxue.github.io/
+
 Jekyll Themes
 ----------
 
@@ -26,9 +29,9 @@ Jekyll Themes
   
 ## Lightweight Minblog
 
-# The first step is to click [fork][6]
-# The second step is to modify CNAME for your domain name
-# The third step is to modify the _config.yml in URL for your domain name
+ The first step is to click [fork][6]
+ The second step is to modify CNAME for your domain name
+ The third step is to modify the _config.yml in URL for your domain name
 
 - Automatic generation tag
 - Automatic generation of JSON search
