@@ -1,6 +1,20 @@
+---
+layout: blog
+banana: true
+category: 香蕉派
+title:  Jekyll Themes liberxue开源博客主题
+date:   2017-08-03 11:21:27
+background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-29/75653305.jpg
+tags:
+- Jekyll Themes
+- Themes
+- liberxue
+---
+
 # liberxue.github.io demo https://liberxue.github.io/
 Jekyll Themes
 ----------
+
 ![uiliberxue][1]
 
   [1]: https://raw.githubusercontent.com/Liberxue/liberxue.github.io/master/thumbnails/ui.jpg
@@ -25,8 +39,8 @@ Jekyll Themes
 - Modify the _config.yml of paginate for how many pages you want to page
 
 
-轻量级 最小blog 
-第一步 点击[fork][6]
+# 轻量级 最小blog 
+## 第一步 点击[fork][6]
  
  [6]: https://github.com/Liberxue/liberxue.github.io#fork-destination-box
  
@@ -50,7 +64,7 @@ tags:
   [3]: https://raw.githubusercontent.com/Liberxue/liberxue.github.io/master/thumbnails/02.gif
   
 
-第二步 修改CNAME 为您的域名
+## 第二步 修改CNAME 为您的域名
 
 ![修改CNAME][4]
 
@@ -58,7 +72,7 @@ tags:
   
 
 
-第三步 修改_config.yml 中的url 为您的域名
+## 第三步 修改_config.yml 中的url 为您的域名
 
 ![修改_config.yml 中的url 为您的域名][5]
 
