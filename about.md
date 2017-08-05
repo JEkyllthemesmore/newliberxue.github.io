@@ -2,6 +2,7 @@
 layout: blog
 title: 关于LiberXue
 description: "关于LiberXue博客角落自述"
+data: 2017-08-05 09:19:11
 tags: 
 - LiberXue
 - 简述
@@ -17,7 +18,7 @@ redirect_from:
  
 又换了个博客主题 这次终于看见不那么难受了
  
-博客使用Jekyll搭建托管在GitHub目前使用主题后期我修改完善会开源
+博客使用Jekyll搭建托管在GitHub目前使用主题后期[已开源](https://github.com/Liberxue/liberxue.github.io)
  
 
 博客图片使用七牛云加速
@@ -53,7 +54,8 @@ redirect_from:
 
 ``c# ``|``lua``| ``c++``|
  ``swift`` |``JavaScript`` |``PHP``|
- 
+  ``Python`` |``Java`` |``GO``|
+ 目前主攻``GO``
 ### 个人爱好
 
  热衷于``路由器``研究和``网络安全``...
@@ -72,7 +74,7 @@ redirect_from:
  
 「所以我不用评论」，社交软件基本很少用，如果您对我的blog有疑问，请发送``Email``联系我。
  
-这个世界太热闹了，也言语太“自由” 需要`面壁者`也需要`独立思考`和`独立学习生活者`
+这个世界太热闹了，也言语太“自由” 需要`面壁者`也需要`独立思考`和`独立学习生活者`和`独立解决问题者`
  
  
 # 第一篇博客
@@ -129,7 +131,7 @@ ID|项 目 名 称| 开 发 语 言| 功 能 简 述| 框架| 是否上线|
 9|安装打包程序|c#|自定义安装包，打包程序源代码|无|是
 10|c#交互lua|c#&adb&lua|通达oa打卡支付ar自动抢五福|无|已开源
 11|freebsd路由器|vc perl PHP ruby|dns双向加速缓存 cc流量分析|freebsd|没有
-11|Jekyll themes|html5 css3 moonjs ruby json|Jekyll|已开源
+11|Jekyll themes|html5 css3 moonjs ruby json|Jekyll|无|已开源
 
 
 
@@ -139,7 +141,7 @@ ID|项 目 名 称| 开 发 语 言| 功 能 简 述| 框架| 是否上线|
  
 你可以通过以下几种方式联系到我。
 
-* [提交Issues](https://github.com/liberxue)
+* [提交Issues](https://github.com/Liberxue/liberxue.github.io/issues)
  
 * [发邮件](mailto:liberxue@gmail.com)
  
