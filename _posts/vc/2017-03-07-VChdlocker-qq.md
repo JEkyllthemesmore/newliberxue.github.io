@@ -11,6 +11,8 @@ tags:
 ---
  
 
+<iframe src="http://ghbtns.com/github-btn.html?user=liberxue&repo=VChdlocker&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+
 ##vc和汇编（nasm）编写的硬盘锁，
 主要原理是在电脑开机自检主板内存进入硬盘时间对windows启动的删除和分区表硬盘MBR异或加密，请勿用于非法勒索谢谢， 可以绕过国内的腾讯管家 360 杀毒软件等
 
