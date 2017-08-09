@@ -67,7 +67,8 @@ Memcached服务器在启动时需要对关键的参数进行配置，下面我�
 Redis是一个开源的key-value存储系统。与Memcached类似，Redis将大部分数据存储在内存中，支持的数据类型包括：字符串、哈希表、链表、集合、有序集合以及基于这些数据类型的相关操作。Redis使用C语言开发，在大多数像Linux、BSD和Solaris等POSIX系统上无需任何外部依赖就可以使用。Redis支持的客户端语言也非常丰富，常用的计算机语言如C、C#、C++、Object-C、PHP、Python、Java、Perl、Lua、Erlang等均有可用的客户端来访问Redis服务器。当前Redis的应用已经非常广泛，国内像新浪、淘宝，国外像Flickr、Github等均在使用Redis的缓存服务。
 Redis的安装非常方便，只需从http://redis.io/download获取源码，然后make && make install即可。默认情况下，Redis的服务器启动程序和客户端程序会安装到/usr/local/bin目录下。在启动Redis服务器时，我们需要为其指定一个配置文件，缺省情况下配置文件在Redis的源码目录下，文件名为redis.conf。
 
-##  Redis配置文件
+##  Redis配置文件 
+ 
 为了对Redis的系统实现有一个直接的认识，我们首先来看一下Redis的配置文件中定义了哪些主要参数以及这些参数的作用。
  
 1 daemonize no 默认情况下，redis不是在后台运行的。如果需要在后台运行，把该项的值更改为yes；
@@ -136,9 +137,11 @@ Redis的安装非常方便，只需从http://redis.io/download获取源码，然
 32 activerehashing yes Redis将在每100毫秒时使用1毫秒的CPU时间来对redis的hash表进行重新hash，可以降低内存的使用。当你的使用场景中，有非常严格的实时性需要，不能够接受Redis时不时的对请求有2毫秒的延迟的话，把这项配置为no。如果没有这么严格的实时性要求，可以设置为yes，以便能够尽可能快的释放内存；
 
 ## Redis的常用数据类型
+ 
 与Memcached仅支持简单的key-value结构的数据记录不同，Redis支持的数据类型要丰富得多。最为常用的数据类型主要由五种：String、Hash、List、Set和Sorted Set。在具体描述这几种数据类型之前，我们先通过一张图来了解下Redis内部内存管理中是如何描述这些不同数据类型的。
 
 ###  Redis对象
+ 
 Redis内部使用一个redisObject对象来表示所有的key和value。redisObject最主要的信息如图1所示：type代表一个value对象具体是何种数据类型，encoding是不同数据类型在redis内部的存储方式，比如：type=string代表value存储的是一个普通字符串，那么对应的encoding可以是raw或者是int，如果是int则代表实际redis内部是按数值型类存储和表示这个字符串的，当然前提是这个字符串本身可以用数值表示，比如:"123" "456"这样的字符串。这里需要特殊说明一下vm字段，只有打开了Redis的虚拟内存功能，此字段才会真正的分配内存，该功能默认是关闭状态的。通过Figure1我们可以发现Redis使用redisObject来表示所有的key/value数据是比较浪费内存的，当然这些内存管理成本的付出主要也是为了给Redis不同数据类型提供一个统一的管理接口，实际作者也提供了多种方法帮助我们尽量节省内存使用。下面我们先来逐一的分析下这五种数据类型的使用和内部实现方式。
 
 ![Redis对象](http://ot1cc1u9t.bkt.clouddn.com/17-8-1/96927364.jpg)
@@ -175,6 +178,7 @@ Redis内部使用一个redisObject对象来表示所有的key和value。redisObj
 实现方式：Redis sorted set的内部使用HashMap和跳跃表(SkipList)来保证数据的存储和有序，HashMap里放的是成员到score的映射，而跳跃表里存放的是所有的成员，排序依据是HashMap里存的score,使用跳跃表的结构可以获得比较高的查找效率，并且在实现上比较简单。
 
 ### Redis的持久化
+ 
 Redis虽然是基于内存的存储系统，但是它本身是支持内存数据的持久化的，而且提供两种主要的持久化策略：RDB快照和AOF日志。我们会在下文分别介绍这两种不同的持久化策略。
 ### Redis的RDB快照
  
