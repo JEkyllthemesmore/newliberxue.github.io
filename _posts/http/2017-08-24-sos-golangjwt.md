@@ -5,12 +5,15 @@ background-image: https://o243f9mnq.qnssl.com/2017/06/116099051.jpg
 date:  2017-08-24 00:13:14
 category: http
 tags:
-- github
-- git-crypt
-- encfs
-- gpg
-- git-remote-gcryp
-- sshfs
+- sso
+- http基本协议
+- http
+- HTTPS
+- beego
+- api
+- jwt
+- authentication
+- authorization
 ---
 # authentication和authorization区别
 
