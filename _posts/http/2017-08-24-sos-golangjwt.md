@@ -1,7 +1,7 @@
 layout: blog
 istop: true
 title: "Authorization认证和授权(authorization)http基本协议"
-background-image: https://o243f9mnq.qnssl.com/2017/06/116099051.jpg
+background-image: http://s4.51cto.com/wyfs02/M02/8A/FE/wKioL1hBFTjj0cgvAAF347CZzHo835.jpg-wh_651x-s_1439817745.jpg
 date:  2017-08-24 00:13:14
 category: http
 tags:
