@@ -48,8 +48,10 @@ tags:
  
 
 ```
-curl -H "Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDMzODU2NjksImlzcyI6IjAxMyJ9.nw2p6xZcEoHae-F1OLnpnfpQRkAK8RjSR1GHro4RJFk" http://localhost:8081/v1/user/auth
+curl -H "Authorization: e-F1OLnpnfpQRkAK8RjSR1GHro4RJFk" http://localhost:8081/v1/user/auth
 ```
+## 效验Token接口demo
+ 
 - header： "Authorization: tokenxxx" 
 
 - url ：http://localhost:8081/v1/user/auth 
@@ -94,14 +96,16 @@ OAuth 对于Http来说，就是放在Authorization header中的不是用户名�
  
 客户端如果要跟“使用基本认证的网站”交互。 非常很简单，把用户名密码 加在Authorization header中就可以了。
  
-```Csharp
+```
 string url = "https://testsite";
 HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
 NetworkCredential nc = new NetworkCredential("username", "password");
 req.Credentials = nc;
+
  ```
 
 Linux下的curl
+ 
 ```
 curl -u username:password https://testsite/
 ```
