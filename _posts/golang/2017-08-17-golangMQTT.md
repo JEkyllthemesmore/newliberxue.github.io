@@ -3,8 +3,8 @@ layout: blog
 istop: true
 title: "golang语言实现的MQTT"
 background-image: https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1502911386359&di=3d6ee92a0e96f80e296ace5e1be53d01&imgtype=0&src=http%3A%2F%2Fpic.w2bc.com%2Fupload%2F201703%2F23%2F201703231530048636.jpg
-date:  2017-03-07
-category: git
+date:  2017-08-18 00:36:14
+category: golang
 tags:
 - golang
 - go
