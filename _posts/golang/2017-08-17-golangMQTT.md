@@ -1,4 +1,4 @@
- ---
+---
 layout: blog
 istop: true
 title: "golang语言实现的MQTT"
