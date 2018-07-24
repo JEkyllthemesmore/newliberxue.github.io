@@ -91,3 +91,22 @@ protobuf的默认安装路径是``/usr/local/lib``,而``/usr/local/lib``不在ub
 # 输入命令
 
 sudo ldconfig
+
+
+# protobuf编译时报错：
+protoc: error while loading shared libraries: libprotoc.so.9: cannot open shared object file: No such file or directory 
+
+环境变量的问题解决方式；
+
+```
+export LD_LIBRARY_PATH=/usr/local/lib
+```
+
+## 编译生成golang protoc
+```
+protoc --go_out=./go   golangtest.proto
+```
+## 注释
+```
+protoc --go_out={输出路径}   {你的proto文件}
+```
