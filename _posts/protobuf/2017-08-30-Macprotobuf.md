@@ -68,10 +68,30 @@ mkdir liberxue/protos
 
 2. 拷贝一个写好的proto文件
 
-```
+
 cdliberxue/protos目录
+
 ```
-3. protoc --proto_path=./  --java_out=./  example.proto
+protoc --proto_path=./  --java_out=./  example.proto
+```
 
 
 ---------会生成你proto文件中包名相关的文件包结构----------
+
+# protobuf编译时报错：
+protoc: error while loading shared libraries: libprotoc.so.9: cannot open shared object file: No such file or directory 
+
+环境变量的问题解决方式；
+
+```
+export LD_LIBRARY_PATH=/usr/local/lib
+```
+
+## 编译生成golang protoc
+```
+protoc --go_out=./go   golangtest.proto
+```
+## 注释
+```
+protoc --go_out={输出路径}   {你的proto文件}
+```
