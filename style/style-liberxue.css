@@ -757,6 +757,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .index-page {
     padding: 120px 20px 0;
+    margin: auto;
 }
 
 .index-page .post-list-item-container .item-label {
